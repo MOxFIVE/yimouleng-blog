@@ -117,6 +117,9 @@
 .article-header{
   border-left: 5px solid;
   padding: 15px 0px 15px 25px;
+  &:hover {
+    border-left: 5px solid hover-color;
+  }
 }
 
 .article-info.info-on-right{
@@ -313,7 +316,7 @@
     border-radius: 2px;
     transition: background 0.3s;
     &:hover{
-      background: #3c3c3c;
+      background: hover-color;
     }
     &.hidden{
       visibility: hidden;

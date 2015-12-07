@@ -49,7 +49,9 @@
     <%- partial('post/nav') %>
   <% } %>
 </article>
-
+<% if (!index && post.toc != false && !is_page()){ %>
+    <%- partial('_partial/toc') %>
+<% } %>
 <% if (!index && theme.share){ %>
 <%- partial('post/share') %>
 <% } %>

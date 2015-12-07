@@ -357,3 +357,77 @@
     float: right;
   }
 }
+
+/*文章目录*/
+.toc-article {
+  position: fixed;
+  left: 0;
+  margin-left: 0;
+  padding: 6px 10px 10px 50px;
+  width: 230px;
+  top: 378px;
+  bottom: 1em;
+  border-radius: 2.8%;
+  overflow: auto;
+}
+
+#toc {
+  float: right;
+  line-height: 1.65em;
+  font-size: .9em;
+  a {
+    color: gray;
+    &:visited {
+      color: rgba(244, 131, 133, 1);
+    } 
+    &:hover {
+      color: #88acdb;
+      text-decoration: none;
+    }
+  }
+  li:hover {
+    background: none;
+    li:hover {
+      background: rgba(158, 188, 226, .21);
+    }
+  }
+  .toc-title {
+    font-weight: bold;
+    color: gray;
+  }
+  .toc {
+    padding: .7em;
+    padding-right: 0;
+    li {
+      list-style-type: none;
+    }
+  }
+  ol {
+    margin-left: 0;
+  }
+  .toc-child {
+    padding-left: 1.25em;
+    margin: 4px 0; 
+  }
+  .toc-link:hover {
+    background: rgba(158, 188, 226, .21);
+  }
+}
+
+#tocButton {
+  position: fixed;
+  left: 220px;
+  top: 382px;
+  border: none;
+  outline: none;
+  -webkit-appearance: none;
+  background: none;
+  font-size: .9em;
+  font-family: inherit;
+  font-weight: bold;
+  color: lightgray;
+  cursor: pointer; 
+  &:hover {
+    color: #88acdb;
+  }
+}

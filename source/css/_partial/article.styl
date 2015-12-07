@@ -144,21 +144,20 @@
     margin-top: 10px;
   }
   p code,li code{
-    padding: 1px 3px;
+    padding: 2px .4em;
     margin: 0 3px;
-    background: #ddd;
-    border: 1px solid #ccc;
-    font-family: Menlo,Monaco,"Andale Mono","lucida console","Courier New",monospace;
+    background: rgba(199, 38, 79, .07);
+    border-radius: .3em;
+    font-family: Menlo, Monaco, "Andale Mono", "lucida console", "Courier New", monospace, "Microsoft YaHei", "Hiragino Sans GB";
+    color: #cc385d;
     word-wrap: break-word;
     font-size: 14px;
   }
   blockquote {
-    background: #ddd;
-    border-left: 5px solid #ccc;
-    padding: 15px 20px;
+    padding: 1px 20px;
     margin-top: 10px;
-    border-left: 5px solid #657b83;
-    background: #f6f6f6;
+    border-left: 4px solid rgba(147, 181, 224, .4);
+    background: rgba(255,255,255,0.4);
     p{
       margin-top: 0;
     }
@@ -197,11 +196,19 @@
     margin-top: 30px;
   }
   h2{
-    margin-top: 20px;
-    font-weight: 300;
-    color: #574C4C;
+    margin: .5em auto;
     padding-bottom: 5px;
     border-bottom: 1px solid #ddd;
+    color: #9c9;
+    font-weight: bold;
+    &:hover {
+      color: #88acdb;
+    }
+    text-align: center;
+    &::before, &::after {
+      content:" —— ";
+      font-family: Arial;
+    }
   }
   h3,h4,h5,h6{
     margin-top: 20px;

@@ -16,6 +16,14 @@
 		<% if (theme.subtitle){ %>
 		<p class="header-subtitle"><%=theme.subtitle%></p>
 		<%}%>
+		<% if (theme.search_box){ %>
+			<form><input type="text" class="search" placeholder=" Search..."></form>
+			<style>
+				.header-author {
+					margin: 13px 0;
+				}
+			</style>
+		<%}%>		
 
 		<%if(theme.tagcloud){%>
 			<div class="switch-btn" id="switch-btn">

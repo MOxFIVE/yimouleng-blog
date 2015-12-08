@@ -62,3 +62,6 @@ friends:
 #aboutme: false
 #开启——
 aboutme: 我是谁，我从哪里来，我到哪里去？我就是我，是颜色不一样的吃货…
+
+#是否显示边栏中的搜索框 
+#search_box: true
